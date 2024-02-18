@@ -1,0 +1,123 @@
+/* Import Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Global Styles */
+* {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #343541;
+    display: flex;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 33px;
+    font-weight: 600;
+    padding: 200px 0;
+}
+
+/* Sidebar Styles */
+.side-bar {
+    background-color: #202123;
+    width: 244px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+/* Main Section Styles */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Bottom Section Styles */
+.bottom-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Information Styles */
+.info {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    padding: 10px;
+}
+
+/* Input Styles */
+input {
+    color: black;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: calc(100% - 40px); /* Adjusted width to accommodate the button */
+    font-size: 20px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px, rgba(0, 0, 0, 0.05) 0 -12px 30px, rgba(0, 0, 0, 0.05) 0 4px 6px, rgba(0, 0, 0, 0.05) 0 12px 3px, rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
+
+input:focus {
+    outline: none;
+    /* Add styling for focus outline */
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Input Container Styles */
+.input-container {
+    position: relative;
+    max-width: 650px;
+    display: flex; /* Added display flex */
+}
+
+.input-container #submit {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Button Styles */
+button {
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: -40px; /* Adjusted margin to position the button properly */
+}
+
+/* Navigation Styles */
+nav {
+    border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 10px;
+}
+
+/* History Styles */
+.history {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.history p {
+    cursor: pointer;
+}
